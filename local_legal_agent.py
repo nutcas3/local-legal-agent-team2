@@ -38,7 +38,7 @@ ollama_embedder = OllamaEmbedder(
 
 # Option 2: OpenAI embedder (cloud)
 openai_embedder = OpenAIEmbedder(
-    model="text-embedding-3-small",
+    id="text-embedding-3-small",
     dimensions=1536  # Correct dimensions for text-embedding-3-small
 )
 
