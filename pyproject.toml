@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "local-legal-agent-team2"
+version = "0.1.0"
+description = "Local Legal Agent Team 2"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "agno",
+    "streamlit==1.40.2",
+    "qdrant-client==1.12.1",
+    "ollama==0.4.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+    "mypy",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "black",
+    "ruff",
+    "mypy",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
