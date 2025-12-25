@@ -7,7 +7,7 @@ from agno.knowledge.knowledge import Knowledge
 from agno.knowledge.reader.pdf_reader import PDFReader
 from agno.vectordb.qdrant import Qdrant
 from agno.models.ollama import Ollama
-from agno.models.openai import OpenAI
+from agno.models.openai import OpenAIChat as OpenAI
 from agno.knowledge.embedder.ollama import OllamaEmbedder
 from agno.knowledge.embedder.openai import OpenAIEmbedder
 

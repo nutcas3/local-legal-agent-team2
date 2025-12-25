@@ -15,6 +15,7 @@ dependencies = [
     "ollama==0.6.1",
     "pypdf",
     "python-dotenv",
+    "openai",
 ]
 
 [project.optional-dependencies]
